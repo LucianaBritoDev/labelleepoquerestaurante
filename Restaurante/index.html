@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>La Belle Époque Restaurante</title>
+  </head>
+  <body>
+    <section class="header">
+      <h1>La Belle Époque Restaurante</h1>
+      <p>Uma experiência culinária extraordinária</p>
+      <button class="cta-button" onclick="scrollToReservation()">
+        Faça sua reserva!
+      </button>
+    </section>
+
+    <section class="menu-section">
+      <h2>Nosso Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Risoto de cogumelos selvagens</h3>
+          <p>
+            Arroz arbóreo cozido lentamente com cogumelos porcini e trufa negra.
+          </p>
+          <div class="price">R$53</div>
+        </div>
+        <div class="menu-item">
+          <h3>Filé Mignon</h3>
+          <p>
+            Corte premium com redução de vinho tinto e purê de batata trufado.
+          </p>
+          <div class="price">R$62</div>
+        </div>
+        <div class="menu-item">
+          <h3>Peixe do dia</h3>
+          <p>Peixe fresco com molho de manteiga de limão e ervas.</p>
+          <div class="price">R$44</div>
+        </div>
+        <div class="menu-item">
+          <h3>Ravioli de lagosta</h3>
+          <p>
+            Massa fresca recheada com lagosta com molho de conhaque e creme.
+          </p>
+          <div class="price">R$71</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation-form" id="reservation">
+      <h2>Reserve sua mesa</h2>
+      <form onsubmit="handleReservation(event)">
+        <div class="form-group">
+          <label>Nome</label>
+          <input type="text" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" required />
+        </div>
+        <div class="form-group">
+          <label>Data</label>
+          <input type="date" required />
+        </div>
+        <div class="form-group">
+          <label>Hora</label>
+          <select required>
+            <option>18:00</option>
+            <option>19:00</option>
+            <option>20:00</option>
+            <option>21:00</option>
+            <option>22:00</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Número de Pessoas</label>
+          <select required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+          </select>
+        </div>
+        <button type="submit" class="cta-button">Confirme a sua reserva</button>
+      </form>
+    </section>
+
+    <section class="footer">
+      <p>
+        La Belle Époque Restaurante | Tel: (86) 123-4567 |
+        info@labelleepoque.com
+      </p>
+      <p>(Aberto de terça a domingo: 18:00 - 23:00)</p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
